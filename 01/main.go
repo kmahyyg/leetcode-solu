@@ -1,3 +1,5 @@
+package main
+
 func twoSum_perfect(nums []int, target int) []int {
 	index := make(map[int]int, len(nums))
 
@@ -12,12 +14,12 @@ func twoSum_perfect(nums []int, target int) []int {
 }
 
 func twoSum(nums []int, target int) []int {
-    for i := 0; i < len(nums); i++ {
-        for j := i+1; j < len(nums); j++ {
-            if target - nums[i] == nums[j]{
-                return []int{i,j}
-            }
-        }
-    }
-    return []int{}
+	for i := 0; i < len(nums); i++ {
+		for j := i + 1; j < len(nums); j++ {
+			if target-nums[i] == nums[j] {
+				return []int{i, j}
+			}
+		}
+	}
+	return []int{}
 }
