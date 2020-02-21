@@ -16,3 +16,6 @@ Example 2:
 Input: "cbbd"
 Output: "bb"
 ```
+
+4ms / 95.42%
+2.3MB / 18.18%

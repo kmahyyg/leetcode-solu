@@ -28,3 +28,6 @@ Note:
 Assume we are dealing with an environment which could only store integers within
 the 32-bit signed integer range: `[−2^31,  2^31 − 1]`. For the purpose of this problem, 
 assume that your function returns 0 when the reversed integer overflows.
+
+Runtime: 4 ms, faster than 42.12% of Go online submissions for Reverse Integer.
+Memory Usage: 2.2 MB, less than 66.67% of Go online submissions for Reverse Integer.
