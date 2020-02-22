@@ -1,3 +1,4 @@
+------------------
 10. Regular Expression Matching
 
 Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'.
@@ -42,14 +43,14 @@ p = ".*"
 
 Output: true
 
-Explanation: ".*" means "zero or more (*) of any character (.)".
+Explanation: `".*"` means "zero or more (`*`) of any character (.)".
 
 Example 4:
 
 Input:
 
 s = "aab"
-p = "c*a*b"
+p = `"c*a*b"`
 
 Output: true
 
@@ -60,6 +61,15 @@ Example 5:
 Input:
 
 s = "mississippi"
-p = "mis*is*p*."
+p = `"mis*is*p*."`
 
 Output: false
+
+------------------
+
+4 ms / 56.25%
+4.8MB / 20%
+
+Personal Thinking: 
+
+Start from matching pattern, then read byte one by one, process original data and set flag for wildcarding, then do what you want.
