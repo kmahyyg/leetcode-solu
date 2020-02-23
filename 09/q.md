@@ -1,4 +1,4 @@
-8. String to Integer (atoi)
+8\. String to Integer (atoi)
 
 Implement atoi which converts a string to an integer.
 
