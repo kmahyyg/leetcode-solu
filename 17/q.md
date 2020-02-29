@@ -23,3 +23,9 @@ Mapping Table:
 Note:
 
 Although the above answer is in lexicographical order, your answer could be in any order you want.
+
+----------------------
+
+Runtime: 0 ms, faster than 100.00% of Go online submissions for Letter Combinations of a Phone Number.
+
+Memory Usage: 2 MB, less than 100.00% of Go online submissions for Letter Combinations of a Phone Number.
