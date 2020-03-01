@@ -5,9 +5,7 @@ import "fmt"
 func main() {
 	testcases := []string{
 		"",
-		"1234",
-		"44552",
-		"231",
+		"23",
 	}
 	for _, v := range testcases {
 		fmt.Println(letterCombinations(v))
