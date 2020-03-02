@@ -19,7 +19,6 @@ func main() {
 type StackNode struct {
 	prev *StackNode
 	data interface{}
-	next *StackNode
 }
 
 type Stack struct {
@@ -32,7 +31,6 @@ type Stack struct {
 func (st *Stack) push(dt interface{}) {
 	nNode := &StackNode{
 		data: dt,
-		next: nil,
 		prev: nil,
 	}
 	if st.bottom == nil || st.top == nil {
@@ -41,7 +39,6 @@ func (st *Stack) push(dt interface{}) {
 		st.datas = nNode
 	} else {
 		nNode.prev = st.top
-		st.top.next = nNode
 		st.top = nNode
 	}
 	st.height += 1
