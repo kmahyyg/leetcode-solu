@@ -7,3 +7,8 @@ Example:
 Input: 1->2->4, 1->3->4
 Output: 1->1->2->3->4->4
 
+------
+
+Runtime: 0 ms, faster than 100.00% of Go online submissions for Merge Two Sorted Lists.
+
+Memory Usage: 2.5 MB, less than 71.43% of Go online submissions for Merge Two Sorted Lists.
