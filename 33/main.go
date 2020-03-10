@@ -3,7 +3,10 @@ package main
 import "fmt"
 
 func main() {
+	fmt.Println(search([]int{2, 1}, 2))
 	fmt.Println(search([]int{5, 1, 3}, 3))
+	fmt.Println(search([]int{4, 5, 6, 7, 0, 1, 2}, 0))
+	fmt.Println(search([]int{4, 5, 6, 7, 0, 1, 2}, 3))
 }
 
 // binary search here
@@ -12,7 +15,7 @@ func main() {
 func search(nums []int, target int) int {
 	current, mid, last := 0, 0, len(nums)
 	for current != last {
-		mid = current + (last-current)/2
+		mid = current + (last - current) / 2
 		if nums[mid] == target {
 			return mid
 		}
