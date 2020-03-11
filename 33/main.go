@@ -20,14 +20,14 @@ func search(nums []int, target int) int {
 		if target == nums[m] {
 			return m
 		}
-		if nums[s] <= nums[m] {
-			if nums[m] > target && nums[s] <= target {
+		if nums[s] <= nums[m] {   // array is sorted from s to m
+			if nums[m] > target && nums[s] <= target {   // check if target is in sorted part
 				e = m - 1
 			} else {
 				s = m + 1
 			}
-		} else {
-			if nums[m] < target && nums[e] >= target {
+		} else {	// array is sorted from m to e
+			if nums[m] < target && nums[e] >= target { // check if target is in sorted part
 				s = m + 1
 			} else {
 				e = m - 1
